@@ -57,6 +57,12 @@
     <Compile Include="EbitMessage.Designer.cs">
       <DependentUpon>EbitMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Facefrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facefrom.Designer.cs">
+      <DependentUpon>Facefrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindFriends.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="UserHelper.cs" />
     <EmbeddedResource Include="EbitMessage.resx">
       <DependentUpon>EbitMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facefrom.resx">
+      <DependentUpon>Facefrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindFriends.resx">
       <DependentUpon>FindFriends.cs</DependentUpon>

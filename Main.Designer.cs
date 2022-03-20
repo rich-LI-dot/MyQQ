@@ -37,7 +37,7 @@ namespace MyQQ
             this.Quit = new System.Windows.Forms.Button();
             this.SystemMessage = new System.Windows.Forms.Button();
             this.Refresh = new System.Windows.Forms.Button();
-            this.FindFriends = new System.Windows.Forms.Button();
+            this.FindFriend = new System.Windows.Forms.Button();
             this.EditMessage = new System.Windows.Forms.Button();
             this.sideBar1 = new Aptech.UI.SideBar();
             this.Face = new System.Windows.Forms.ImageList(this.components);
@@ -48,10 +48,10 @@ namespace MyQQ
             // 
             // Via
             // 
-            this.Via.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Via.Location = new System.Drawing.Point(29, 35);
+            this.Via.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Via.Location = new System.Drawing.Point(29, 32);
             this.Via.Name = "Via";
-            this.Via.Size = new System.Drawing.Size(77, 68);
+            this.Via.Size = new System.Drawing.Size(74, 74);
             this.Via.TabIndex = 2;
             this.Via.TabStop = false;
             // 
@@ -72,7 +72,7 @@ namespace MyQQ
             this.panel1.Controls.Add(this.Quit);
             this.panel1.Controls.Add(this.SystemMessage);
             this.panel1.Controls.Add(this.Refresh);
-            this.panel1.Controls.Add(this.FindFriends);
+            this.panel1.Controls.Add(this.FindFriend);
             this.panel1.Controls.Add(this.EditMessage);
             this.panel1.Location = new System.Drawing.Point(0, 908);
             this.panel1.Name = "panel1";
@@ -116,17 +116,18 @@ namespace MyQQ
             this.Refresh.UseVisualStyleBackColor = true;
             this.Refresh.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
             // 
-            // FindFriends
+            // FindFriend
             // 
-            this.FindFriends.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FindFriends.BackgroundImage")));
-            this.FindFriends.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FindFriends.Location = new System.Drawing.Point(65, 13);
-            this.FindFriends.Name = "FindFriends";
-            this.FindFriends.Size = new System.Drawing.Size(59, 54);
-            this.FindFriends.TabIndex = 1;
-            this.FindFriends.Tag = "查找好友";
-            this.FindFriends.UseVisualStyleBackColor = true;
-            this.FindFriends.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.FindFriend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FindFriend.BackgroundImage")));
+            this.FindFriend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FindFriend.Location = new System.Drawing.Point(65, 13);
+            this.FindFriend.Name = "FindFriend";
+            this.FindFriend.Size = new System.Drawing.Size(59, 54);
+            this.FindFriend.TabIndex = 1;
+            this.FindFriend.Tag = "查找好友";
+            this.FindFriend.UseVisualStyleBackColor = true;
+            this.FindFriend.Click += new System.EventHandler(this.FindFriend_Click);
+            this.FindFriend.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
             // 
             // EditMessage
             // 
@@ -138,6 +139,7 @@ namespace MyQQ
             this.EditMessage.TabIndex = 0;
             this.EditMessage.Tag = "编辑个人信息";
             this.EditMessage.UseVisualStyleBackColor = true;
+            this.EditMessage.Click += new System.EventHandler(this.EditMessage_Click_1);
             this.EditMessage.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
             // 
             // sideBar1
@@ -159,6 +161,7 @@ namespace MyQQ
             this.sideBar1.View = Aptech.UI.SbView.LargeIcon;
             this.sideBar1.VisibleGroup = null;
             this.sideBar1.VisibleGroupIndex = -1;
+            this.sideBar1.Click += new System.EventHandler(this.sideBar1_Click);
             // 
             // Face
             // 
@@ -299,7 +302,7 @@ namespace MyQQ
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.Button SystemMessage;
         private System.Windows.Forms.Button Refresh;
-        private System.Windows.Forms.Button FindFriends;
+        private System.Windows.Forms.Button FindFriend;
         private Aptech.UI.SideBar sideBar1;
         private System.Windows.Forms.ImageList Face;
         private System.Windows.Forms.ToolTip ShowMessage;

@@ -36,6 +36,7 @@ namespace MyQQ
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@ namespace MyQQ
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(627, 605);
+            this.button1.Location = new System.Drawing.Point(522, 605);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 45);
             this.button1.TabIndex = 1;
@@ -61,7 +62,7 @@ namespace MyQQ
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(808, 605);
+            this.button2.Location = new System.Drawing.Point(677, 605);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 45);
             this.button2.TabIndex = 2;
@@ -98,6 +99,15 @@ namespace MyQQ
             this.tabPage2.Text = "高级查找";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(826, 605);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(126, 45);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // FindFriends
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -105,6 +115,7 @@ namespace MyQQ
             this.BackgroundImage = global::MyQQ.Properties.Resources.SearchFormBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1016, 693);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -126,5 +137,6 @@ namespace MyQQ
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button3;
     }
 }

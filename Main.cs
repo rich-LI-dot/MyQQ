@@ -81,7 +81,9 @@ namespace MyQQ
                     for (int i = 0; i < Dt.Rows.Count; i++)//循环把添加好友项
                     {
                         SbItem item = new SbItem((String)Dt.Rows[i][1],(int)Dt.Rows[i][2]);
-                        sideBar1.Groups[0].Items.Add(item);
+                        item.Tag = (int)Dt.Rows[i][1];
+                        sideBar1.Groups[i].Items.Add(item);
+
 
                     }
                 }
@@ -109,5 +111,25 @@ namespace MyQQ
         {
             Application.Exit();
         }//关闭时退出程序
+
+        private void sideBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+        //单击查找按钮打开查找好友窗体
+        private void FindFriend_Click(object sender, EventArgs e)
+        {
+            FindFriends find = new FindFriends();
+            find.Show();
+        }
+
+        //单击编辑按钮打开编辑信息窗体
+        private void EditMessage_Click_1(object sender, EventArgs e)
+        {
+
+            EbitMessage ebit = new EbitMessage();
+            ebit.Show();
+        }
     }
 }

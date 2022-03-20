@@ -29,23 +29,23 @@ namespace MyQQ
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EbitMessage));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.photo = new System.Windows.Forms.PictureBox();
+            this.PersonalData = new System.Windows.Forms.Button();
+            this.SecuritySettings = new System.Windows.Forms.Button();
+            this.ebitOk = new System.Windows.Forms.Button();
+            this.cancel = new System.Windows.Forms.Button();
+            this.change = new System.Windows.Forms.Button();
+            this.info = new System.Windows.Forms.Panel();
+            this.userblood = new System.Windows.Forms.ComboBox();
+            this.userstar = new System.Windows.Forms.ComboBox();
+            this.usersex = new System.Windows.Forms.ComboBox();
+            this.userasge = new System.Windows.Forms.TextBox();
+            this.realname = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.usernumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +53,25 @@ namespace MyQQ
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ebitpassword = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.passwordok = new System.Windows.Forms.Label();
+            this.newpassword = new System.Windows.Forms.Label();
+            this.oldpassword = new System.Windows.Forms.Label();
+            this.Face = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo)).BeginInit();
+            this.info.SuspendLayout();
+            this.ebitpassword.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -68,142 +84,150 @@ namespace MyQQ
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // photo
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(437, 59);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 96);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.photo.Location = new System.Drawing.Point(437, 59);
+            this.photo.Name = "photo";
+            this.photo.Size = new System.Drawing.Size(107, 96);
+            this.photo.TabIndex = 1;
+            this.photo.TabStop = false;
             // 
-            // button1
+            // PersonalData
             // 
-            this.button1.Location = new System.Drawing.Point(58, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 53);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.PersonalData.BackgroundImage = global::MyQQ.Properties.Resources.BaseInfo;
+            this.PersonalData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PersonalData.FlatAppearance.BorderSize = 0;
+            this.PersonalData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PersonalData.Location = new System.Drawing.Point(42, 39);
+            this.PersonalData.Name = "PersonalData";
+            this.PersonalData.Size = new System.Drawing.Size(135, 42);
+            this.PersonalData.TabIndex = 2;
+            this.PersonalData.UseVisualStyleBackColor = true;
+            this.PersonalData.Click += new System.EventHandler(this.PersonalData_Click);
             // 
-            // button2
+            // SecuritySettings
             // 
-            this.button2.Location = new System.Drawing.Point(58, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 53);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SecuritySettings.BackgroundImage = global::MyQQ.Properties.Resources.Security;
+            this.SecuritySettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SecuritySettings.FlatAppearance.BorderSize = 0;
+            this.SecuritySettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SecuritySettings.Location = new System.Drawing.Point(42, 129);
+            this.SecuritySettings.Name = "SecuritySettings";
+            this.SecuritySettings.Size = new System.Drawing.Size(135, 42);
+            this.SecuritySettings.TabIndex = 3;
+            this.SecuritySettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SecuritySettings.UseVisualStyleBackColor = true;
+            this.SecuritySettings.Click += new System.EventHandler(this.SecuritySettings_Click);
             // 
-            // button3
+            // ebitOk
             // 
-            this.button3.Location = new System.Drawing.Point(675, 633);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 53);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ebitOk.BackgroundImage = global::MyQQ.Properties.Resources.button;
+            this.ebitOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ebitOk.Location = new System.Drawing.Point(675, 633);
+            this.ebitOk.Name = "ebitOk";
+            this.ebitOk.Size = new System.Drawing.Size(103, 53);
+            this.ebitOk.TabIndex = 4;
+            this.ebitOk.Text = "确定";
+            this.ebitOk.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // cancel
             // 
-            this.button4.Location = new System.Drawing.Point(830, 633);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 53);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.cancel.BackgroundImage = global::MyQQ.Properties.Resources.button;
+            this.cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cancel.Location = new System.Drawing.Point(830, 633);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(103, 53);
+            this.cancel.TabIndex = 5;
+            this.cancel.Text = "取消";
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
-            // button5
+            // change
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(564, 118);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 37);
-            this.button5.TabIndex = 6;
-            this.button5.UseVisualStyleBackColor = true;
+            this.change.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("change.BackgroundImage")));
+            this.change.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.change.Location = new System.Drawing.Point(564, 118);
+            this.change.Name = "change";
+            this.change.Size = new System.Drawing.Size(32, 37);
+            this.change.TabIndex = 6;
+            this.change.UseVisualStyleBackColor = true;
+            this.change.Click += new System.EventHandler(this.change_Click);
             // 
-            // panel1
+            // info
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Location = new System.Drawing.Point(238, 117);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(695, 447);
-            this.panel1.TabIndex = 7;
+            this.info.BackColor = System.Drawing.Color.Transparent;
+            this.info.Controls.Add(this.userblood);
+            this.info.Controls.Add(this.userstar);
+            this.info.Controls.Add(this.usersex);
+            this.info.Controls.Add(this.userasge);
+            this.info.Controls.Add(this.realname);
+            this.info.Controls.Add(this.username);
+            this.info.Controls.Add(this.usernumber);
+            this.info.Controls.Add(this.label7);
+            this.info.Controls.Add(this.label6);
+            this.info.Controls.Add(this.label5);
+            this.info.Controls.Add(this.label4);
+            this.info.Controls.Add(this.label3);
+            this.info.Controls.Add(this.label2);
+            this.info.Controls.Add(this.label1);
+            this.info.Controls.Add(this.photo);
+            this.info.Controls.Add(this.change);
+            this.info.Location = new System.Drawing.Point(238, 117);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(695, 447);
+            this.info.TabIndex = 7;
             // 
-            // panel2
+            // userblood
             // 
-            this.panel2.Location = new System.Drawing.Point(24, 7);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(695, 440);
-            this.panel2.TabIndex = 21;
+            this.userblood.FormattingEnabled = true;
+            this.userblood.Location = new System.Drawing.Point(469, 307);
+            this.userblood.Name = "userblood";
+            this.userblood.Size = new System.Drawing.Size(163, 32);
+            this.userblood.TabIndex = 20;
             // 
-            // comboBox3
+            // userstar
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(469, 307);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(163, 32);
-            this.comboBox3.TabIndex = 20;
+            this.userstar.FormattingEnabled = true;
+            this.userstar.Location = new System.Drawing.Point(145, 307);
+            this.userstar.Name = "userstar";
+            this.userstar.Size = new System.Drawing.Size(163, 32);
+            this.userstar.TabIndex = 19;
             // 
-            // comboBox2
+            // usersex
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(145, 307);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(163, 32);
-            this.comboBox2.TabIndex = 19;
+            this.usersex.FormattingEnabled = true;
+            this.usersex.Location = new System.Drawing.Point(146, 191);
+            this.usersex.Name = "usersex";
+            this.usersex.Size = new System.Drawing.Size(163, 32);
+            this.usersex.TabIndex = 18;
             // 
-            // comboBox1
+            // userasge
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(146, 191);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(163, 32);
-            this.comboBox1.TabIndex = 18;
+            this.userasge.Location = new System.Drawing.Point(469, 253);
+            this.userasge.Name = "userasge";
+            this.userasge.Size = new System.Drawing.Size(164, 35);
+            this.userasge.TabIndex = 17;
             // 
-            // textBox4
+            // realname
             // 
-            this.textBox4.Location = new System.Drawing.Point(469, 253);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 35);
-            this.textBox4.TabIndex = 17;
+            this.realname.Location = new System.Drawing.Point(145, 256);
+            this.realname.Name = "realname";
+            this.realname.Size = new System.Drawing.Size(164, 35);
+            this.realname.TabIndex = 16;
             // 
-            // textBox3
+            // username
             // 
-            this.textBox3.Location = new System.Drawing.Point(145, 256);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 35);
-            this.textBox3.TabIndex = 16;
+            this.username.Location = new System.Drawing.Point(146, 128);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(164, 35);
+            this.username.TabIndex = 15;
             // 
-            // textBox2
+            // usernumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 35);
-            this.textBox2.TabIndex = 15;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(146, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 35);
-            this.textBox1.TabIndex = 14;
+            this.usernumber.Location = new System.Drawing.Point(146, 56);
+            this.usernumber.Name = "usernumber";
+            this.usernumber.Size = new System.Drawing.Size(164, 35);
+            this.usernumber.TabIndex = 14;
             // 
             // label7
             // 
@@ -269,6 +293,231 @@ namespace MyQQ
             this.label1.TabIndex = 7;
             this.label1.Text = "用户号码：";
             // 
+            // ebitpassword
+            // 
+            this.ebitpassword.BackColor = System.Drawing.Color.Transparent;
+            this.ebitpassword.Controls.Add(this.groupBox2);
+            this.ebitpassword.Controls.Add(this.groupBox1);
+            this.ebitpassword.Location = new System.Drawing.Point(33, 117);
+            this.ebitpassword.Name = "ebitpassword";
+            this.ebitpassword.Size = new System.Drawing.Size(695, 444);
+            this.ebitpassword.TabIndex = 21;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Location = new System.Drawing.Point(3, 253);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(686, 162);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "身份验证";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(61, 128);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(305, 28);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "不允许任何人加我为好友";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(61, 81);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(377, 28);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "需要身份验证才能添加我为好友";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(61, 34);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(305, 28);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "允许任何人添加我为好友";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.passwordok);
+            this.groupBox1.Controls.Add(this.newpassword);
+            this.groupBox1.Controls.Add(this.oldpassword);
+            this.groupBox1.Location = new System.Drawing.Point(6, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(686, 211);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "修改密码";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(163, 145);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(439, 35);
+            this.textBox7.TabIndex = 5;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(163, 89);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(439, 35);
+            this.textBox6.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(163, 32);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(439, 35);
+            this.textBox5.TabIndex = 3;
+            // 
+            // passwordok
+            // 
+            this.passwordok.AutoSize = true;
+            this.passwordok.Location = new System.Drawing.Point(6, 145);
+            this.passwordok.Name = "passwordok";
+            this.passwordok.Size = new System.Drawing.Size(154, 24);
+            this.passwordok.TabIndex = 2;
+            this.passwordok.Text = "新密码确认：";
+            // 
+            // newpassword
+            // 
+            this.newpassword.AutoSize = true;
+            this.newpassword.Location = new System.Drawing.Point(53, 92);
+            this.newpassword.Name = "newpassword";
+            this.newpassword.Size = new System.Drawing.Size(106, 24);
+            this.newpassword.TabIndex = 1;
+            this.newpassword.Text = "新密码：";
+            // 
+            // oldpassword
+            // 
+            this.oldpassword.AutoSize = true;
+            this.oldpassword.Location = new System.Drawing.Point(53, 43);
+            this.oldpassword.Name = "oldpassword";
+            this.oldpassword.Size = new System.Drawing.Size(106, 24);
+            this.oldpassword.TabIndex = 0;
+            this.oldpassword.Text = "原密码：";
+            // 
+            // Face
+            // 
+            this.Face.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Face.ImageStream")));
+            this.Face.TransparentColor = System.Drawing.Color.Transparent;
+            this.Face.Images.SetKeyName(0, "1.bmp");
+            this.Face.Images.SetKeyName(1, "2.bmp");
+            this.Face.Images.SetKeyName(2, "3.bmp");
+            this.Face.Images.SetKeyName(3, "4.bmp");
+            this.Face.Images.SetKeyName(4, "5.bmp");
+            this.Face.Images.SetKeyName(5, "6.bmp");
+            this.Face.Images.SetKeyName(6, "7.bmp");
+            this.Face.Images.SetKeyName(7, "8.bmp");
+            this.Face.Images.SetKeyName(8, "9.bmp");
+            this.Face.Images.SetKeyName(9, "10.bmp");
+            this.Face.Images.SetKeyName(10, "11.bmp");
+            this.Face.Images.SetKeyName(11, "12.bmp");
+            this.Face.Images.SetKeyName(12, "13.bmp");
+            this.Face.Images.SetKeyName(13, "14.bmp");
+            this.Face.Images.SetKeyName(14, "15.bmp");
+            this.Face.Images.SetKeyName(15, "16.bmp");
+            this.Face.Images.SetKeyName(16, "17.bmp");
+            this.Face.Images.SetKeyName(17, "18.bmp");
+            this.Face.Images.SetKeyName(18, "19.bmp");
+            this.Face.Images.SetKeyName(19, "20.bmp");
+            this.Face.Images.SetKeyName(20, "21.bmp");
+            this.Face.Images.SetKeyName(21, "22.bmp");
+            this.Face.Images.SetKeyName(22, "23.bmp");
+            this.Face.Images.SetKeyName(23, "24.bmp");
+            this.Face.Images.SetKeyName(24, "25.bmp");
+            this.Face.Images.SetKeyName(25, "26.bmp");
+            this.Face.Images.SetKeyName(26, "27.bmp");
+            this.Face.Images.SetKeyName(27, "28.bmp");
+            this.Face.Images.SetKeyName(28, "29.bmp");
+            this.Face.Images.SetKeyName(29, "30.bmp");
+            this.Face.Images.SetKeyName(30, "31.bmp");
+            this.Face.Images.SetKeyName(31, "32.bmp");
+            this.Face.Images.SetKeyName(32, "33.bmp");
+            this.Face.Images.SetKeyName(33, "34.bmp");
+            this.Face.Images.SetKeyName(34, "35.bmp");
+            this.Face.Images.SetKeyName(35, "36.bmp");
+            this.Face.Images.SetKeyName(36, "37.bmp");
+            this.Face.Images.SetKeyName(37, "38.bmp");
+            this.Face.Images.SetKeyName(38, "39.bmp");
+            this.Face.Images.SetKeyName(39, "40.bmp");
+            this.Face.Images.SetKeyName(40, "41.bmp");
+            this.Face.Images.SetKeyName(41, "42.bmp");
+            this.Face.Images.SetKeyName(42, "43.bmp");
+            this.Face.Images.SetKeyName(43, "44.bmp");
+            this.Face.Images.SetKeyName(44, "45.bmp");
+            this.Face.Images.SetKeyName(45, "46.bmp");
+            this.Face.Images.SetKeyName(46, "47.bmp");
+            this.Face.Images.SetKeyName(47, "48.bmp");
+            this.Face.Images.SetKeyName(48, "49.bmp");
+            this.Face.Images.SetKeyName(49, "50.bmp");
+            this.Face.Images.SetKeyName(50, "51.bmp");
+            this.Face.Images.SetKeyName(51, "52.bmp");
+            this.Face.Images.SetKeyName(52, "53.bmp");
+            this.Face.Images.SetKeyName(53, "54.bmp");
+            this.Face.Images.SetKeyName(54, "55.bmp");
+            this.Face.Images.SetKeyName(55, "56.bmp");
+            this.Face.Images.SetKeyName(56, "57.bmp");
+            this.Face.Images.SetKeyName(57, "58.bmp");
+            this.Face.Images.SetKeyName(58, "59.bmp");
+            this.Face.Images.SetKeyName(59, "60.bmp");
+            this.Face.Images.SetKeyName(60, "61.bmp");
+            this.Face.Images.SetKeyName(61, "62.bmp");
+            this.Face.Images.SetKeyName(62, "63.bmp");
+            this.Face.Images.SetKeyName(63, "64.bmp");
+            this.Face.Images.SetKeyName(64, "65.bmp");
+            this.Face.Images.SetKeyName(65, "66.bmp");
+            this.Face.Images.SetKeyName(66, "67.bmp");
+            this.Face.Images.SetKeyName(67, "68.bmp");
+            this.Face.Images.SetKeyName(68, "69.bmp");
+            this.Face.Images.SetKeyName(69, "70.bmp");
+            this.Face.Images.SetKeyName(70, "71.bmp");
+            this.Face.Images.SetKeyName(71, "72.bmp");
+            this.Face.Images.SetKeyName(72, "73.bmp");
+            this.Face.Images.SetKeyName(73, "74.bmp");
+            this.Face.Images.SetKeyName(74, "75.bmp");
+            this.Face.Images.SetKeyName(75, "76.bmp");
+            this.Face.Images.SetKeyName(76, "77.bmp");
+            this.Face.Images.SetKeyName(77, "78.bmp");
+            this.Face.Images.SetKeyName(78, "79.bmp");
+            this.Face.Images.SetKeyName(79, "80.bmp");
+            this.Face.Images.SetKeyName(80, "81.bmp");
+            this.Face.Images.SetKeyName(81, "82.bmp");
+            this.Face.Images.SetKeyName(82, "83.bmp");
+            this.Face.Images.SetKeyName(83, "84.bmp");
+            this.Face.Images.SetKeyName(84, "85.bmp");
+            this.Face.Images.SetKeyName(85, "86.bmp");
+            this.Face.Images.SetKeyName(86, "87.bmp");
+            this.Face.Images.SetKeyName(87, "88.bmp");
+            this.Face.Images.SetKeyName(88, "89.bmp");
+            this.Face.Images.SetKeyName(89, "90.bmp");
+            this.Face.Images.SetKeyName(90, "91.bmp");
+            this.Face.Images.SetKeyName(91, "92.bmp");
+            this.Face.Images.SetKeyName(92, "93.bmp");
+            this.Face.Images.SetKeyName(93, "94.bmp");
+            this.Face.Images.SetKeyName(94, "95.bmp");
+            this.Face.Images.SetKeyName(95, "96.bmp");
+            this.Face.Images.SetKeyName(96, "97.bmp");
+            this.Face.Images.SetKeyName(97, "98.bmp");
+            this.Face.Images.SetKeyName(98, "99.bmp");
+            this.Face.Images.SetKeyName(99, "100.bmp");
+            this.Face.Images.SetKeyName(100, "101.bmp");
+            this.Face.Images.SetKeyName(101, "back.bmp");
+            // 
             // EbitMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -276,19 +525,26 @@ namespace MyQQ
             this.BackgroundImage = global::MyQQ.Properties.Resources.PersonalFormBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1017, 698);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ebitpassword);
+            this.Controls.Add(this.info);
+            this.Controls.Add(this.cancel);
+            this.Controls.Add(this.ebitOk);
+            this.Controls.Add(this.SecuritySettings);
+            this.Controls.Add(this.PersonalData);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EbitMessage";
             this.Text = "编辑个人信息";
+            this.Load += new System.EventHandler(this.EbitMessage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo)).EndInit();
+            this.info.ResumeLayout(false);
+            this.info.PerformLayout();
+            this.ebitpassword.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,20 +552,20 @@ namespace MyQQ
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox photo;
+        private System.Windows.Forms.Button PersonalData;
+        private System.Windows.Forms.Button SecuritySettings;
+        private System.Windows.Forms.Button ebitOk;
+        private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Button change;
+        private System.Windows.Forms.Panel info;
+        private System.Windows.Forms.ComboBox userblood;
+        private System.Windows.Forms.ComboBox userstar;
+        private System.Windows.Forms.ComboBox usersex;
+        private System.Windows.Forms.TextBox userasge;
+        private System.Windows.Forms.TextBox realname;
+        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox usernumber;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -317,6 +573,18 @@ namespace MyQQ
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel ebitpassword;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label passwordok;
+        private System.Windows.Forms.Label newpassword;
+        private System.Windows.Forms.Label oldpassword;
+        private System.Windows.Forms.ImageList Face;
     }
 }

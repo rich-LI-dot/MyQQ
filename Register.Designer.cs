@@ -266,6 +266,8 @@ namespace MyQQ
             // regist
             // 
             this.regist.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.regist.BackgroundImage = global::MyQQ.Properties.Resources.button;
+            this.regist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.regist.Location = new System.Drawing.Point(587, 882);
             this.regist.Name = "regist";
             this.regist.Size = new System.Drawing.Size(144, 44);
@@ -277,6 +279,8 @@ namespace MyQQ
             // cancell
             // 
             this.cancell.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cancell.BackgroundImage = global::MyQQ.Properties.Resources.button;
+            this.cancell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cancell.Location = new System.Drawing.Point(796, 882);
             this.cancell.Name = "cancell";
             this.cancell.Size = new System.Drawing.Size(144, 44);

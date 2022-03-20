@@ -25,7 +25,7 @@ namespace MyQQ
                 register = new Register();
             }
             return register;
-        }
+        }//单例模式
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataAdapter sda;
